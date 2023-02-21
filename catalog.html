@@ -43,19 +43,18 @@
       </nav>
     </header>
     <main class="inner">
-      <header class="inner-header">
-        <h1 class="inner-header-title">Гостиницы Седоны</h1>
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">Главная</a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
-          </li>
-        </ul>
-      </header>
       <section class="filter">
-        <h2 class="visually-hidden">Список услуг с фильтрами</h2>
+        <header class="inner-header">
+          <h1 class="inner-header-title">Гостиницы Седоны</h1>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link">Гостиницы</a>
+            </li>
+          </ul>
+        </header>
         <form class="filter-group" action="http://echo.htmlacademy.ru" method="post">
           <fieldset class="catalog-filter">
             <legend class="catalog-filter-title">Инфраструктура</legend>
@@ -87,7 +86,7 @@
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="accomodation">Парковка
+                  <input class="control-input" type="radio" name="accomodation">Мотель
                 </label>
               </li>
               <li class="catalog-filter-item">
@@ -103,6 +102,8 @@
           <button class="button-filter button" type="submit">Применить</button>
           <button class="button-filter button" type="reset">Сбросить</button>
         </form>
+      </section>
+      <section class="hotel-choise">
         <h2 class="sum-title ">Найдено гостиниц: 38</h2>
         <select  class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
