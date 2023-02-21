@@ -43,19 +43,18 @@
       </nav>
     </header>
     <main class="inner">
-      <header class="inner-header">
-        <h1 class="inner-header-title">Гостиницы Седоны</h1>
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">Главная</a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
-          </li>
-        </ul>
-      </header>
       <section class="filter">
-        <h2 class="visually-hidden">Список услуг с фильтрами</h2>
+        <header class="inner-header">
+          <h1 class="inner-header-title">Гостиницы Седоны</h1>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link">Гостиницы</a>
+            </li>
+          </ul>
+        </header>
         <form class="filter-group" action="http://echo.htmlacademy.ru" method="post">
           <fieldset class="catalog-filter">
             <legend class="catalog-filter-title">Инфраструктура</legend>
@@ -87,7 +86,7 @@
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="accomodation">Парковка
+                  <input class="control-input" type="radio" name="accomodation">Мотель
                 </label>
               </li>
               <li class="catalog-filter-item">
@@ -103,7 +102,9 @@
           <button class="button-filter button" type="submit">Применить</button>
           <button class="button-filter button" type="reset">Сбросить</button>
         </form>
-        <h2 class="sum-title">Найдено гостиниц: 38</h2>
+      </section>
+      <section class="hotel-choise">
+        <h2 class="sum-title ">Найдено гостиниц: 38</h2>
         <select  class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
@@ -184,9 +185,9 @@
           </li>
         </ul>
       </section>
-      <article class="subscribe">
-        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-        <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <article class="subscribe subscribe-2">
+        <h2 class="subscribe-title sub-title">Подпишитесь на рассылку</h2>
+        <p class="subscribe-description sub-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="http://echo.htmlacademy.ru" method="post">
           <input type="email" placeholder="Ваш e-mail" required>
           <button type="submit">ПОДПИСАТЬСЯ</button>
