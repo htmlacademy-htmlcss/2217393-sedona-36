@@ -97,7 +97,6 @@ body {
 }
 
 .welcome {
-  display: block;
   background-image: url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -126,7 +125,6 @@ body {
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -145,11 +143,14 @@ body {
 
 .item-2,
 .item-4 {
-  background-color: rgba(131, 179, 211, 0.12);
+  flex-direction: column;
   color: #000000;
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .item-3 {
+  flex-direction: column;
+  color: #000000;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
@@ -172,6 +173,7 @@ body {
   display: flex;
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .add-title {
@@ -189,7 +191,6 @@ body {
 
 .add-item-add {
   width: 400px;
-  height: 385px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -237,9 +238,9 @@ body {
   color: #ffffff;
 }
 
-.main-footer-container {
+.main-footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 
@@ -314,8 +315,8 @@ body {
   display: flex;
   width: 1060px;
   justify-content: space-between;
-  margin: auto;
-  padding: auto;
+  margin: 0;
+  padding: 0;
 }
 
 .hotel-list {
@@ -365,6 +366,8 @@ body {
 .pagination {
   display: flex;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .pagination-item {
