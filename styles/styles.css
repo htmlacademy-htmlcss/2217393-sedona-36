@@ -64,7 +64,6 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding-left: 30px;
-  max-width: 470px;
   list-style: none;
 }
 
@@ -81,7 +80,7 @@ body {
 
 .navigation-user {
   margin-left: auto;
-  max-width: 320px;
+  align-items: center;
 }
 
 .navigation-user .navigation-link {
@@ -101,7 +100,6 @@ body {
   background-color: #756157;
   border-radius: 4px;
   padding: 8px 0;
-  margin-top: 14px;
 }
 
 .visually-hidden {
@@ -183,7 +181,6 @@ body {
 .advantages-item {
   display: flex;
   align-items: center;
-  gap: 62px 0;
 }
 
 .item-2,
@@ -355,7 +352,7 @@ body {
   font-family: "PT Sans";
   font-size: 18px;
   line-height: 24px;
-  padding: 14px 345px 14px 20px;
+  padding: 14px 228px 14px 20px;
   border: 0;
 }
 
@@ -373,8 +370,9 @@ body {
 .main-footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 50px;
   margin: 40px 70px 30px;
-  padding: 40px 0;
 }
 
 .footer-social-list {
@@ -469,7 +467,7 @@ body {
 }
 
 .catalog-filter-item:not(:last-child) {
-margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .slider {
@@ -485,9 +483,9 @@ margin-bottom: 16px;
 }
 
 .manage {
-display: flex;
-flex-direction: column;
-justify-content: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 
 .button-filter {
@@ -556,7 +554,7 @@ justify-content: end;
 }
 
 .hotel-card-image {
-margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .hotel-card-title {
@@ -590,7 +588,8 @@ margin-bottom: 16px;
   justify-content: center;
   line-height: 20px;
   width: 140px;
-  height: 36px;border-radius: 4px;
+  height: 36px;
+  border-radius: 4px;
 }
 
 .hotel-card-button {
@@ -617,13 +616,12 @@ margin-bottom: 16px;
 }
 
 .hotel-stars {
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .pagination {
   display: flex;
   list-style-type: none;
-  margin: 0;
   margin: 80px 0 60px;
   padding: 0;
 }
