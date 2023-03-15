@@ -67,26 +67,38 @@ body {
   list-style: none;
 }
 
-.navigation-list {
-  position: relative;
-}
-
 .navigation-link {
+  position: relative;
   display: block;
-  padding: 20px 16px;
+  padding: 20px 16px 20px 8px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   color: #000000;
   text-align: center;
   text-decoration: none;
+  /* margin-right: 16px; */
+}
+
+.notification-like {
+  position: absolute;
+  font-size: 10px;
+  border-radius: 50%;
+  top: 8px;
+  color: #ffffff;
+  background-color: #7DB54F;
+  right: 8px;
+  width: 20px;
+  height: 20px;
+  line-height: 2;
 }
 
 .navigation-current::before {
   content: "";
   position: absolute;
   top: 63px;
-  width: 68px;
+  left: 16px;
+  right: 16px;
   height: 2px;
   background-color: #756257;
 }
@@ -113,6 +125,24 @@ body {
   background-color: #756157;
   border-radius: 4px;
   padding: 8px 0;
+  margin-left: 12px;
+}
+
+.nav-button:hover {
+  background-color: #615048;
+}
+
+.nav-button:focus {
+  background-color: #615048;
+}
+
+.nav-button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.nav-button:disabled {
+  background-color: #E5E5E5;
 }
 
 .visually-hidden {
@@ -133,12 +163,24 @@ body {
 }
 
 .welcome {
+  position: relative;
   background-image: url("../images/index-background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #474747;
   padding-top: 51px;
   padding-bottom: 82px;
+}
+
+.welcome::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 57px;
+  left: 0;
+  bottom: -1px;
+  background-image: url(../images/decor.svg);
+  z-index: 1;
 }
 
 .main-index {
@@ -276,22 +318,16 @@ body {
 .add-item-1 {
   width: 75px;
   height: 72px;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .add-item-2 {
   width: 74px;
   height: 70px;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .add-item-3 {
   width: 64px;
   height: 76px;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .add-description {
@@ -349,6 +385,7 @@ body {
 }
 
 .interest-description {
+  padding: 0 8px;
   margin-bottom: 54px;
 }
 
@@ -358,12 +395,29 @@ body {
   width: 376px;
   background-color: #756157;
   border-radius: 4px;
-  padding: 8px 50px;
+  padding: 8px 0;
+}
+
+.button-int:hover {
+  background-color: #615048;
+}
+
+.button-int:focus {
+  background-color: #615048;
+}
+
+.button-int:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-int:disabled {
+  background-color: #E5E5E5;
 }
 
 .subscribe-1 {
   background-image: url("../images/subscribe.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #333333;
 }
@@ -392,6 +446,14 @@ body {
   color: #ffffff;
   margin: 0;
   margin-bottom: 54px;
+}
+
+.subscribe-title-2 {
+  color: #000000;
+}
+
+.subscribe-description-2 {
+  color: #333333;
 }
 
 .form {
@@ -423,7 +485,24 @@ body {
   background-color: #82B3D3;
   border: 0;
   border-radius: 0 4px 4px 0;
+}
 
+.submit:hover {
+  background-color: #68A2CA;
+  cursor: pointer;
+}
+
+.submit:focus {
+  background-color: #68A2CA;
+}
+
+.submit:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.submit:disabled {
+background-color: #E5E5E5;
 }
 
 .main-footer {
@@ -591,6 +670,11 @@ body {
   margin-bottom: 16px;
 }
 
+.control-input {
+  width: 20px;
+  height: 20px;
+}
+
 .slider {
   width: 160px;
   margin: 0 70px;
@@ -616,13 +700,48 @@ body {
   border-radius: 4px;
 }
 
-.button-fil-1 {
+.button-filter-1 {
   background-color: #82B3D3;
+  cursor: pointer;
 }
 
-.button-fil-2 {
+.button-filter-1:hover {
+  background-color: #68A2CA;
+}
+
+.button-filter-1:focus {
+  background-color: #68A2CA;
+}
+
+.button-filter-1:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-filter-1:disabled {
+  background-color: #E5E5E5;
+}
+
+.button-filter-2 {
   background-color: transparent;
   margin-top: 32px;
+  cursor: pointer;
+}
+
+.button-filter-2:hover {
+  opacity: 60%;
+}
+
+.button-filter-2:focus {
+  border: 3px solid #83B3D3;
+}
+
+.button-filter-2:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-filter-2:disabled {
+  opacity: 10%;
 }
 
 .sum-title {
@@ -635,7 +754,6 @@ body {
 }
 
 .select-control {
-  display: flex;
   font-family: "PT Sans";
   font-weight: 400;
   font-size: 18px;
@@ -643,8 +761,23 @@ body {
   width: 292px;
   height: 49px;
   padding-left: 20px;
+  padding-right: 40px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  appearance: none;
+  background-image: url(../images/select_v.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  cursor: pointer;
+}
+
+.select-control:hover {
+  border-color: #68A2CA;
+}
+
+.select-control:focus {
+  border-color: #68A2CA;
+  outline: none;
 }
 
 .hotel-choise {
@@ -736,9 +869,17 @@ body {
   color: #333333;
 }
 
+.stars {
+  display: flex;
+  align-items: center;
+}
+
+.stars svg {
+  margin-right: 3px;
+}
+
 .button-card,
 .hotel-card-button,
-.stars,
 .hotel-rank {
   display: flex;
   align-items: center;
@@ -749,6 +890,23 @@ body {
   border-radius: 4px;
 }
 
+.hotel-card-button:hover {
+  background-color: #615048;
+}
+
+.hotel-card-button:focus {
+  background-color: #615048;
+}
+
+.hotel-card-button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.hotel-card-button:disabled {
+  background-color: #E5E5E5;
+}
+
 .hotel-card-button {
   background-color: #756157;
 }
@@ -757,10 +915,45 @@ body {
   color: #ffffff;
   background-color: #82B3D3;
   border: 0;
+  cursor: pointer;
+}
+
+.button-card:hover {
+  background-color: #68A2CA;
+}
+
+.button-card:focus {
+  background-color: #68A2CA;
+}
+
+.button-card:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-card:disabled {
+  background-color: #E5E5E5;
 }
 
 .button-selected {
   background-color: #7DB54F;
+}
+
+.button-selected:hover {
+  background-color: #6C9E42;
+}
+
+.button-selected:focus {
+  background-color: #6C9E42;
+}
+
+.button-selected:active {
+  background-color: #7DB54F;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-selected:disabled {
+  background-color: #E5E5E5;
 }
 
 .hotel-rank {
